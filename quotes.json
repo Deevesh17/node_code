@@ -1,28 +1,16 @@
 {
-  "quotes": [
-    {
-      "text": "The Dream Is Free But the Hustle Is Sold Separately",
-      "author": "George Koufalis"
-    },
-    {
-      "text": "Mankind invented the atomic bomb, but no mouse would ever construct a mousetrap.",
-      "author": "Albert Einstein"
-    },
-    {
-      "text": "Talk is cheap. Show me the code.",
-      "author": "Linus Torvalds"
-    }
-     {
-      "text": "The purpose of our lives is to be happy.",
-      "author": "Dalai Lama"
-    }
-     {
-      "text": "Life is what happens when you're busy making other plans",
-      "author": "John Lennon"
-    }
-     {
-      "text": "You only live once, but if you do it right, once is enough.",
-      "author": "Mae West."
-    }
-  ]
-}
+    "quotes": [
+      {
+        "text": "The Dream Is Free But the Hustle Is Sold Separately",
+        "author": "George Koufalis"
+      },
+      {
+        "text": "Mankind invented the atomic bomb, but no mouse would ever construct a mousetrap.",
+        "author": "Albert Einstein"
+      },
+      {
+        "text": "Talk is cheap. Show me the code.",
+        "author": "Linus Torvalds"
+      }
+    ]
+  }
