@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, Button } from "react-native"
 
 function useQuote() {
   const [quote, setQuote] = useState(null)
+  var [count,setCount] = useState(0);
 
   useEffect(() => {
     updateQuote()
@@ -16,20 +17,24 @@ function useQuote() {
         setQuote(quotes[randomIndex])
       })
   }
+  function updatecoun(){
+    setCount(count +1)
+  }
+  
 
-  return { quote, updateQuote }
+  return { quote,count, updateQuote,updatecoun }
 }
 
 export default function App() {
-  const { quote, updateQuote } = useQuote()
-
+  const { quote, updateQuote ,count,updatecoun} = useQuote()
   return (
     <View style={styles.container}>
       {quote && (
         <Fragment>
           <Text style={styles.quoteText}>{quote.text}</Text>
           <Text style={styles.quoteAuthor}>{quote.author}</Text>
-          <Button onPress={updateQuote} title="Quote!" />
+      <Button  onPress={updateQuote} onPress={updatecoun} title= "Show Me Another Quote!" />
+      <Text style={styles.quoteAuthor}>Quotes Visted {count}</Text>
         </Fragment>
       )}
     </View>
@@ -39,7 +44,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#80bfff",
     alignItems: "center",
     justifyContent: "center",
     padding: 25,
